@@ -1,0 +1,8 @@
+<input label='add-task' placeholder='tarea' type='text' [(ngModel)]='toDoItemDescription'/>
+<button (click)="AddItem()">Agregar tarea</button>
+<ul>
+	<li *ngFor='let item of toDoItemsList'>
+			{{ item.description }}
+	</li>
+</ul>
+
