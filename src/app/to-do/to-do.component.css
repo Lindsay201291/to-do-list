@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+} 
+
+.form-check-input, .custom-input {
+  border: 2px solid rgb(167, 171, 237);;
+	/*  */
+}
+
+custom-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-container, .custom-input {
+ width: 20rem;
+ /* border: 2px solid; */
+}
+
+.button-delete {
+  border: none;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-check-label {
+  text-align: left;
+  margin-left: 5px;
+  flex-grow: 1;
+}
+
+@media (min-width: 340px) {
+  .custom-button {
+    margin-top: 1rem;
+  }
+}
