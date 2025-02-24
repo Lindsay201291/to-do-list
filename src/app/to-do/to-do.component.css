@@ -7,18 +7,20 @@
 	/*  */
 }
 
-custom-container {
+ /*.custom-container {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .custom-container, .custom-input {
- width: 20rem;
+ width: 18rem;
  /* border: 2px solid; */
 }
 
 .button-delete {
+  border-radius: 5px;
   border: none;
+  background-color: #fff;
 }
 
 svg {
@@ -28,6 +30,8 @@ svg {
 
 .task-container {
   display: flex;
+  flex-wrap: wrap;
+  /* flex-basis: 100%; */
   justify-content: space-between;
 }
 
@@ -35,10 +39,31 @@ svg {
   text-align: left;
   margin-left: 5px;
   flex-grow: 1;
+  /* flex-basis: 30%; */
 }
 
-@media (min-width: 340px) {
-  .custom-button {
-    margin-top: 1rem;
+.task-container {
+ /* margin-top: 3rem; */
+  flex-basis: 100%;
+}
+
+.custom-button {
+  margin-top: 1rem;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+nav { 
+  background-color: #50AC54;
+  color: #fff;
+  font-size: 24px;
+  padding: 24px;
+}
+
+@media (max-width: 340px) {
+  .custom-container, .custom-input {
+    width: 16rem;
   }
 }

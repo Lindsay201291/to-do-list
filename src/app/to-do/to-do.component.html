@@ -1,3 +1,4 @@
+<nav>To Do List App</nav>
 <div class="mb-3 ms-3 mt-5 custom-container">
   <div>
     <input class="form-control custom-input me-2" type='text' label='addTask' placeholder='tarea' [(ngModel)]='toDoItemDescription'/>
@@ -8,7 +9,7 @@
     @for (item of toDoItemsList; track item.id; let i = $index) {
     <div class="form-check task-container">
       <input class="form-check-input" type="checkbox" label="checkboxTask" [(ngModel)]="item.status" (change)="changeStatus()"/> 
-      <label class="form-check-label">{{ item.description }}</label>
+      <label class="form-check-label" [ngClass]="{ 'strikethrough': item.status }">{{ item.description }}</label>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal{{ i }}" 
       data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
